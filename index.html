@@ -16,8 +16,11 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/base2.css">
     <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 769px)">
+
+    <!-- Scripts -->
+    <script src="scripts/courses.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     
@@ -46,11 +49,9 @@
             <h1>Home</h1>
 
             <!-- ABOUT SECTION -->
-            <section class="top-grid">
-                <div class="card">
-                    <div class="card-title">
-                        About Me
-                    </div>
+            <div class="top-grid">
+                <section class="card">
+                    <h2 class="card-title">About Me</h2>
                     <div class="card-content">
                         <p>
                             I am a Computer Engineering graduate with a strong academic foundation, currently advancing my skills in Software Engineering at Brigham Young University (BYU). 
@@ -61,23 +62,19 @@
                             My goal is to secure a full-time remote tech role with a top global technology company, where I can contribute to building scalable, reliable, and impactful solutions.
                         </p>
                     </div>
-                </div>
+                </section>
 
-                <div class="card">
-                    <div class="card-title">
-                        Student Photo
-                    </div>
+                <section class="card">
+                    <h2 class="card-title">Student Photo</h2>
                     <div class="card-content photo">
                         <img src="images/mypics.webp" alt="Student">
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
 
             <!-- CERTIFICATES -->
             <section class="certificate">
-                <div class="section-title">
-                    Web Certificate Courses
-                </div>
+                <h2 class="section-title">Web Certificate Courses</h2>
                 <div class="buttons">
                     <button type="button" data-filter="all" class="active">All</button>
                     <button type="button" data-filter="CSE">CSE</button>
@@ -115,7 +112,5 @@
         </footer>
 
     </div>
-    <script src="scripts/courses.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
 </body>
 </html>

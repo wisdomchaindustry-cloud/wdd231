@@ -22,6 +22,10 @@ html {
 
 body {
   margin: 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  background: #eef8eb;
+  color: #1f2429;
+  line-height: 1.5;
 }
 
 /**
@@ -39,7 +43,11 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 28px 0;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #1f2429;
 }
 
 /* Grouping content
@@ -147,6 +155,7 @@ sup {
 
 img {
   border-style: none;
+  display: block;
 }
 
 /* Forms
@@ -314,4 +323,36 @@ textarea {
    ========================================================================== */
 
 /*
- * Add the correct
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
