@@ -1,0 +1,13 @@
+/* Desktop-only refinements (loaded only above 768px via the media attribute on the <link> tag) */
+
+.top-grid {
+    gap: 30px;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.courses {
+    gap: 20px;
+}
