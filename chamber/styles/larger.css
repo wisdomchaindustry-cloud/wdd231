@@ -88,6 +88,21 @@
         grid-template-columns:repeat(2,1fr);
     }
 
+    /* ---------- JOIN LAYOUT ---------- */
+
+    .join-layout{
+        flex-direction:row;
+        align-items:flex-start;
+    }
+
+    .join-form{
+        flex:2;
+    }
+
+    .membership-cards{
+        flex:1;
+    }
+
     /* ---------- FOOTER ---------- */
 
     footer{

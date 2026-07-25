@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uyo Chamber of Commerce | Join</title>
+
+    <meta
+        name="description"
+        content="Apply to join the Uyo Chamber of Commerce and connect your business with opportunities across Akwa Ibom State.">
+
+    <meta
+        name="author"
+        content="Francis Ime">
+
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Uyo Chamber of Commerce">
+    <meta
+        property="og:description"
+        content="Apply to join the Uyo Chamber of Commerce and connect your business with opportunities across Akwa Ibom State.">
+
+    <meta
+        property="og:image"
+        content="https://wisdomchaindustry-cloud.github.io/wdd231/chamber/images/hero.webp">
+
+    <meta
+        property="og:url"
+        content="https://wisdomchaindustry-cloud.github.io/wdd231/chamber/join.html">
+
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-container">
+
+        <img
+            src="images/ibomair.webp"
+            alt="Uyo Chamber of Commerce Logo"
+            width="70"
+            height="70">
+
+        <div>
+
+            <p class="site-title">Uyo Chamber of Commerce</p>
+
+            <p>Connecting Businesses. Building Communities.</p>
+
+        </div>
+
+    </div>
+
+    <button
+        id="menuButton"
+        aria-label="Open Navigation Menu">
+
+        ☰
+
+    </button>
+
+    <nav id="navigation">
+
+        <ul>
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="directory.html">Directory</a>
+            </li>
+
+            <li>
+                <a
+                    class="active"
+                    href="join.html">
+                    Join
+                </a>
+            </li>
+
+            <li>
+                <a href="discover.html">Discover</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h1>Join the Uyo Chamber of Commerce</h1>
+
+    <div class="join-layout">
+
+        <!-- ================= APPLICATION FORM ================= -->
+
+        <form
+            action="thankyou.html"
+            method="get"
+            class="join-form">
+
+            <label for="firstName">
+                First Name
+                <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    title="Enter your first name"
+                    autocomplete="given-name"
+                    required>
+            </label>
+
+            <label for="lastName">
+                Last Name
+                <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    title="Enter your last name"
+                    autocomplete="family-name"
+                    required>
+            </label>
+
+            <label for="orgTitle">
+                Organizational Title
+                <input
+                    type="text"
+                    id="orgTitle"
+                    name="orgTitle"
+                    title="Letters, hyphens, and spaces only, minimum 7 characters"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\-\s]{7,}">
+            </label>
+
+            <label for="email">
+                Email Address
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    title="Enter your email address"
+                    autocomplete="email"
+                    placeholder="yourname@example.com"
+                    required>
+            </label>
+
+            <label for="mobile">
+                Mobile Phone Number
+                <input
+                    type="tel"
+                    id="mobile"
+                    name="mobile"
+                    title="Enter your mobile phone number"
+                    autocomplete="tel"
+                    required>
+            </label>
+
+            <label for="orgName">
+                Business/Organization Name
+                <input
+                    type="text"
+                    id="orgName"
+                    name="orgName"
+                    title="Enter your business or organization name"
+                    autocomplete="organization"
+                    required>
+            </label>
+
+            <label for="membership">
+                Membership Level
+                <select
+                    id="membership"
+                    name="membership"
+                    title="Select a membership level"
+                    required>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label for="description">
+                Business/Organization Description
+                <textarea
+                    id="description"
+                    name="description"
+                    title="Briefly describe your business or organization"
+                    rows="5"></textarea>
+            </label>
+
+            <input
+                type="hidden"
+                id="timestamp"
+                name="timestamp">
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+        </form>
+
+        <!-- ================= MEMBERSHIP CARDS ================= -->
+
+        <aside class="membership-cards">
+
+            <article class="membership-card np">
+
+                <h2>NP Membership</h2>
+
+                <p>Free membership for registered non-profit organizations.</p>
+
+                <button
+                    class="modal-trigger"
+                    data-target="npModal">
+                    Learn More
+                </button>
+
+            </article>
+
+            <article class="membership-card bronze">
+
+                <h2>Bronze Membership</h2>
+
+                <p>An affordable entry point for small businesses getting started.</p>
+
+                <button
+                    class="modal-trigger"
+                    data-target="bronzeModal">
+                    Learn More
+                </button>
+
+            </article>
+
+            <article class="membership-card silver">
+
+                <h2>Silver Membership</h2>
+
+                <p>Expanded visibility and event benefits for growing businesses.</p>
+
+                <button
+                    class="modal-trigger"
+                    data-target="silverModal">
+                    Learn More
+                </button>
+
+            </article>
+
+            <article class="membership-card gold">
+
+                <h2>Gold Membership</h2>
+
+                <p>Our premier tier with maximum exposure and full chamber benefits.</p>
+
+                <button
+                    class="modal-trigger"
+                    data-target="goldModal">
+                    Learn More
+                </button>
+
+            </article>
+
+        </aside>
+
+    </div>
+
+    <!-- ================= MODALS ================= -->
+
+    <dialog id="npModal" class="membership-modal">
+
+        <h2>NP Membership Benefits</h2>
+
+        <ul>
+            <li>Free membership, no annual fee</li>
+            <li>Listing in the online business directory</li>
+            <li>Access to chamber networking events</li>
+            <li>Monthly community newsletter</li>
+        </ul>
+
+        <button class="modal-close">Close</button>
+
+    </dialog>
+
+    <dialog id="bronzeModal" class="membership-modal">
+
+        <h2>Bronze Membership Benefits</h2>
+
+        <ul>
+            <li>All NP Membership benefits</li>
+            <li>Discounted tickets to chamber events</li>
+            <li>Basic directory listing with logo</li>
+            <li>Access to member-only workshops</li>
+        </ul>
+
+        <button class="modal-close">Close</button>
+
+    </dialog>
+
+    <dialog id="silverModal" class="membership-modal">
+
+        <h2>Silver Membership Benefits</h2>
+
+        <ul>
+            <li>All Bronze Membership benefits</li>
+            <li>Eligible for home page "Member Spotlight" rotation</li>
+            <li>Priority booking for chamber events</li>
+            <li>Quarterly advertising placement</li>
+        </ul>
+
+        <button class="modal-close">Close</button>
+
+    </dialog>
+
+    <dialog id="goldModal" class="membership-modal">
+
+        <h2>Gold Membership Benefits</h2>
+
+        <ul>
+            <li>All Silver Membership benefits</li>
+            <li>Top-tier placement in Member Spotlights</li>
+            <li>Featured advertising on the home page</li>
+            <li>Complimentary tickets to the Annual Chamber Gala</li>
+            <li>Dedicated account support from chamber staff</li>
+        </ul>
+
+        <button class="modal-close">Close</button>
+
+    </dialog>
+
+</main>
+
+<footer>
+
+    <section>
+
+        <h3>Uyo Chamber of Commerce</h3>
+
+        <p>12 Wellington Bassey Way</p>
+
+        <p>Uyo, Akwa Ibom State</p>
+
+        <p>Email: info@uyochamber.org</p>
+
+        <p>Phone: +234 803 123 4567</p>
+
+    </section>
+
+    <section class="social-links">
+
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <img src="images/facebook.svg" alt="Facebook">
+        </a>
+
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        <a href="https://x.com" target="_blank" aria-label="X">
+            <img src="images/twitter.svg" alt="X">
+        </a>
+
+    </section>
+
+    <section>
+
+        <p>&copy; <span id="currentYear"></span> Francis Ime</p>
+
+        <p>WDD 231 Chamber Project</p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+    </section>
+
+</footer>
+
+</body>
+</html>
