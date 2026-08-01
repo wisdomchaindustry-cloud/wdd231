@@ -44,10 +44,13 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Preload LCP hero image -->
+    <link rel="preload" as="image" href="images/hero.webp">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width:640px)">
 
     <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
