@@ -20,6 +20,8 @@ const displayDiscoverItems = (items) =>{
         card.classList.add("discover-card");
         card.style.gridArea = `item${index + 1}`;
 
+        const loadingAttr = index === 0 ? "eager" : "lazy";
+
         card.innerHTML = `
             <h2>${item.name}</h2>
 
@@ -27,7 +29,7 @@ const displayDiscoverItems = (items) =>{
                 <img
                     src="${item.image}"
                     alt="${item.name}"
-                    loading="lazy"
+                    loading="${loadingAttr}"
                     width="300"
                     height="200">
             </figure>
