@@ -103,6 +103,27 @@
         flex:1;
     }
 
+    /* ---------- DISCOVER PAGE (MEDIUM) ---------- */
+
+    .discover-grid{
+        grid-template-columns:1fr 1fr;
+        grid-template-areas:
+            "item1 item1"
+            "item2 item3"
+            "item4 item5"
+            "item6 item7"
+            "item8 item8";
+    }
+
+    .discover-card img{
+        transition:transform .4s ease,filter .4s ease;
+    }
+
+    .discover-card img:hover{
+        transform:scale(1.05);
+        filter:brightness(1.08);
+    }
+
     /* ---------- FOOTER ---------- */
 
     footer{
@@ -147,6 +168,16 @@
 
     .hero-image{
         height:500px;
+    }
+
+    /* ---------- DISCOVER PAGE (LARGE) ---------- */
+
+    .discover-grid{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-areas:
+            "item1 item1 item2 item3"
+            "item4 item5 item6 item6"
+            "item7 item8 item8 item8";
     }
 
     .member-card{
