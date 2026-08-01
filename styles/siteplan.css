@@ -1,0 +1,254 @@
+/* ==========================================
+   IBIBIO ROOTS
+   Site Plan Stylesheet
+   WDD 231
+========================================== */
+
+:root{
+    --terracotta:#a0522d;
+    --deep-green:#2f5233;
+    --gold:#d4a017;
+    --cream:#faf3e7;
+    --charcoal:#2b2b2b;
+    --white:#ffffff;
+
+    --heading-font:"Playfair Display",serif;
+    --body-font:"Lato",sans-serif;
+
+    --radius:10px;
+    --shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:var(--body-font);
+    background:var(--cream);
+    color:var(--charcoal);
+    line-height:1.7;
+}
+
+/* ---------- HEADER ---------- */
+
+header{
+    background:var(--terracotta);
+    color:var(--white);
+    text-align:center;
+    padding:3rem 1.5rem;
+}
+
+.eyebrow{
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    font-size:.8rem;
+    opacity:.85;
+    margin-bottom:.5rem;
+}
+
+header h1{
+    font-family:var(--heading-font);
+    font-size:2.5rem;
+    margin-bottom:.5rem;
+}
+
+.tagline{
+    font-size:1.1rem;
+    opacity:.9;
+}
+
+/* ---------- MAIN ---------- */
+
+main{
+    width:min(92%,900px);
+    margin:0 auto;
+    padding:2.5rem 0;
+}
+
+section{
+    background:var(--white);
+    border-left:5px solid var(--deep-green);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:2rem;
+    margin-bottom:2.5rem;
+}
+
+h2{
+    font-family:var(--heading-font);
+    color:var(--terracotta);
+    font-size:1.6rem;
+    margin-bottom:1rem;
+}
+
+h3{
+    font-family:var(--heading-font);
+    color:var(--deep-green);
+    margin-bottom:.5rem;
+}
+
+p{
+    margin-bottom:1rem;
+}
+
+ul,
+ol{
+    margin:0 0 1rem 1.5rem;
+}
+
+li{
+    margin-bottom:.6rem;
+}
+
+/* ---------- SITE NAME ---------- */
+
+.site-name-display{
+    font-family:var(--heading-font);
+    font-size:1.8rem;
+    color:var(--deep-green);
+    font-weight:700;
+    margin-bottom:.75rem;
+}
+
+.domain-note{
+    font-size:.9rem;
+    color:var(--terracotta);
+    font-style:italic;
+}
+
+/* ---------- COLOR SCHEMA ---------- */
+
+.swatch-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.25rem;
+}
+
+.swatch-color{
+    width:100%;
+    height:70px;
+    border-radius:8px;
+    margin-bottom:.5rem;
+    border:1px solid rgba(0,0,0,.1);
+}
+
+.terracotta{
+    background:var(--terracotta);
+}
+
+.deep-green{
+    background:var(--deep-green);
+}
+
+.gold{
+    background:var(--gold);
+}
+
+.cream{
+    background:var(--cream);
+}
+
+.charcoal{
+    background:var(--charcoal);
+}
+
+.swatch-name{
+    font-weight:700;
+    color:var(--charcoal);
+    margin-bottom:.25rem;
+}
+
+.swatch-use{
+    font-size:.9rem;
+    color:#555;
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+.type-sample{
+    background:var(--cream);
+    border-radius:8px;
+    padding:1.25rem;
+    margin-bottom:1.25rem;
+}
+
+.type-label{
+    font-weight:700;
+    color:var(--gold);
+    text-transform:uppercase;
+    font-size:.8rem;
+    letter-spacing:.05em;
+    margin-bottom:.5rem;
+}
+
+.heading-demo{
+    font-family:var(--heading-font);
+    font-size:1.6rem;
+    color:var(--terracotta);
+    margin-bottom:.75rem;
+}
+
+.body-demo{
+    font-family:var(--body-font);
+    font-size:1.05rem;
+    margin-bottom:.75rem;
+}
+
+.type-note{
+    font-size:.9rem;
+    color:#555;
+    margin-bottom:0;
+}
+
+/* ---------- WIREFRAME ---------- */
+
+.wireframe-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
+}
+
+figure{
+    text-align:center;
+}
+
+figure img{
+    width:100%;
+    height:auto;
+    border:2px solid var(--deep-green);
+    border-radius:8px;
+    background:var(--white);
+}
+
+figcaption{
+    margin-top:.5rem;
+    font-weight:700;
+    color:var(--deep-green);
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    background:var(--deep-green);
+    color:var(--white);
+    text-align:center;
+    padding:1.5rem;
+    font-size:.9rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media screen and (min-width:700px){
+
+    .swatch-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .wireframe-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
