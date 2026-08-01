@@ -8,7 +8,7 @@
 
 :root{
     --primary:#0b3c5d;
-    --secondary:#328cc1;
+    --secondary:#2a75a3;
     --accent:#d9b310;
     --light:#f7f9fb;
     --dark:#222222;
@@ -396,7 +396,7 @@ footer h3{
     text-align:center;
 }
 
-.forecast-day h4{
+.forecast-day h3{
     font-family:var(--heading-font);
     color:var(--primary);
     margin-bottom:.4rem;

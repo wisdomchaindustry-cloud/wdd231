@@ -118,7 +118,7 @@ const displayForecast = (data) =>{
         dayCard.classList.add("forecast-day");
 
         dayCard.innerHTML = `
-            <h4>${dayName}</h4>
+            <h3>${dayName}</h3>
 
             <img
                 src="https://openweathermap.org/img/wn/${iconCode}.png"
